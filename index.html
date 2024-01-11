@@ -202,6 +202,7 @@
         img {
             display: block;
             margin-bottom: 25px;
+            max-width: 600px;
         }
 
         /* Slideshow container */
@@ -310,7 +311,22 @@
             border-radius: 1%;
         }
 
-        @media screen and (max-width: 600px) {
+        .panel2 {
+            float: left;
+            display: block;
+            margin: 10px;
+            margin-left: 3px;
+            padding: 50px;
+            background-color: #fff;
+            color: black;
+            max-width: 600px;
+            min-width: 600px;
+            border:1px solid black;
+            border-radius: 1%;
+            position: relative;
+        }
+
+        @media screen and (max-width: 500px) {
             .column {
                 width: 100%;
             }
@@ -370,19 +386,19 @@
        
             
 
-            <div class="panel" style="border: none; margin: 0;background-color: #f2f2f2;">
+            <div class="panel" style="border: none; margin: 0;background-color: #f2f2f2;width:100%;">
                 <h2 style="font-weight: lighter;margin-top: 100px;">About</h2>
             
             
             <div class="row">
                 <div class="column">
-                    <img src="meB&W.jpg" alt="profile_photo" style="min-width: 600px;max-width: 600px; margin-right: 0;">
+                    <img src="meB&W.jpg" alt="profile_photo">
                 </div>
 
-                <div class="column" style="background-color: #f2f2f2; width:600px; margin: 5px; margin-top: 60px;">
+                <div class="column">
 
 
-                <div class="panel" style="padding: 50px;margin-left: 10px;">
+                <div class="panel2">
 
                     <p>Hi! My name is Kyriaki but everyone calls me Korina.</p><br>
                 <p></p>
@@ -398,15 +414,15 @@
             </div>
             </div>
 
-            <div class="panel" style="border: none; margin: 0;background-color: #000;">
+            <div class="panel" style="border: none; background-color: #000; width: 100%;">
 
             <div class="row">
                 
 
-                <div class="column" style="background-color: #000; width:600px; margin: 5px; margin-top: 60px;">
+                <div class="column">
 
 
-                <div class="panel" style="padding: 50px;margin-left: 30px;margin-right: 10px;">
+                <div class="panel2" style="padding: 50px;margin-left: 30px;margin-right: 10px;">
 
                     <p>I love taking photos wherever I go and express through my photos to share my view of the world. You can have 
                         a look at some of the photos I took over the years on my wordpress page. </p><br>
