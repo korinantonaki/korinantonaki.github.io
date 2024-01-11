@@ -340,6 +340,10 @@
 
         @media screen and (max-width: 600px) {
 
+          * {
+            box-sizing: inherit;
+          }
+
             body {
               overflow-x: scroll;
               padding: 0;
@@ -366,11 +370,12 @@
             .panel2 {
               max-width:400px;
               display: grid;
+              margin: 0;
               
             }
             .slideshow-container {
               max-width: 400px;
-              margin: auto;
+              margin: 0;
               padding: 0;
               display: grid;
             }
