@@ -6,7 +6,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     </head>
     <style>
         * {
@@ -66,9 +65,6 @@
 
         body {
             background-color: #fff;
-            width: 100%;
-            margin: 0;
-            overflow-x: auto;
         }
 
         #box {
@@ -102,7 +98,6 @@
             margin-right: 20px;
             margin-top: 0;
             margin-bottom: 0;
-
             
         }
 
@@ -207,13 +202,12 @@
         img {
             display: block;
             margin-bottom: 25px;
-            margin-right: 5px;
             max-width: 600px;
         }
 
         /* Slideshow container */
 .slideshow-container {
-  max-width: 600px;
+  max-width: 1000px;
   min-width: 600px; 
   position: relative;
   margin-top:20px; margin-left: 10px;
@@ -307,12 +301,10 @@
 
 
         .panel {
-            
-            margin: 10px;
-            padding: 50px;
+          
             background-color: #fff;
             color: black;
-            width: 1000px;
+            width: max-content;
             border:1px solid black;
             border-radius: 1%;
         }
@@ -329,51 +321,17 @@
             min-width: 600px;
             border:1px solid black;
             border-radius: 1%;
-            position: relative;
         }
 
-        .flexi {
-          width: 100%;
-          padding: 0;
-          margin: 0;
+        .panel2 p {
+          font-weight: lighter;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
         }
 
-        @media screen and (max-width: 600px) {
-
-            body {
-              overflow-x: scroll;
-              padding: 0;
-              width: 100%;
-              display: block;
-            }
+        @media screen and (max-width: 500px) {
             .column {
                 width: 100%;
-            }
-            .footer {
-              width: 100%;
-              padding: 0;
-            }
-            img {
-              width: 100%;
-            }
-
-            .panel {
-              max-width: 1000px;
-              padding: 0;
-              
-            }
-          
-            .panel2 {
-              max-width:400px;
-              display: grid;
-              margin: 0;
-              
-            }
-            .slideshow-container {
-              max-width: 400px;
-              margin: 0;
-              padding: 0;
-              display: grid;
             }
         }
         .footer {
@@ -392,208 +350,250 @@
 
             }
 
+          
+            table {
+                float: center;
+                background-color: #f2f2f2;
+                border-collapse: collapse;
+                width: 1000px;
+                align-items:center;
+                margin: 20px;
+                border-radius: 5px;
+                font-weight: lighter;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            }
+
+            tr {
+                vertical-align: middle;
+            }
+
+            th, td {
+                padding: 20px;
+                margin: 0px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                border-width: 100%;
+            }
+
+            @media screen and (max-width: 600px) {
+                table {
+                    border:0
+                }
+                
+            }
+
+            tr:hover {
+                background-color: rgb(163, 180, 186); 
+            }
+
         
 
     </style>
      <script src="https://kit.fontawesome.com/15a7aa20dc.js" crossorigin="anonymous"></script>
 
-     <body style="overflow: scroll;">
- 
-         <div style="position: fixed; top: 0; width: 100%;z-index: 100;">
-         
-     
-             <div class="header">
-                 <h1><img src="logo.png" alt="logo">Korina Antonaki</h1>
-             
- 
-             <div class="dropdown">
-                 
-                 <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-                 <div id="myDropdown" class="dropdown-content">
-                   
-                  <a href="index.html">About</a>
-                   <a href="Kyriaki_Antonaki_CV.pdf">Resume</a>
-                   <a href="#C4">Contact</a>
-                 </div>
-               </div>
- 
-             </div>
-         
- 
-         <div class="topnav">
-             
-             <button class="btn"><a href="index.html">About</a></button>
-             <button class="btn"><a href="Kyriaki_Antonaki_CV.pdf" target="_blank">Resume </a></button>
-             <button class="btn"><a href="#C4">Contact</a></button>
-         </div>
- </div>
-         
+    <body style="overflow: scroll;">
+
+        <div style="position: fixed; top: 0; width: 100%;z-index: 100;">
         
-             
- 
-             <div class="panel" style="border: none; margin: 0;background-color: #f2f2f2;">
-                 <h2 style="font-weight: lighter;margin-top: 100px;">About</h2>
-             
-             
-             <div class="row">
-                 <div class="column">
-                     <img src="meB&W.jpg" alt="profile_photo" style="min-width: 600px;max-width: 600px; margin-right: 0;">
-                 </div>
- 
-                 <div class="column" style="background-color: #f2f2f2; width:600px; margin: 5px; margin-top: 60px;">
- 
- 
-                 <div class="panel" style="padding: 50px;margin-left: 10px;">
- 
-                     <p>Hi! My name is Kyriaki but everyone calls me Korina.</p><br>
-                 <p></p>
-                 <p> I am an enthusiastic learning designer and passionate 
-                     about blending technology with learning as well as helping learners build confidence in their educational journey. 
-                     I am also a Linguistics graduate (MA with Honours) with a solid foundation in cognitive sciences and programming. 
-                     
-                 <p></p><br>
-                 <p>Overall, I like making stuff, find joy in being creative and have recently discovered my deep interest in web development. </p>
-                     </p>  
-                     </div>
-                 </div>
-             </div>
-             </div>
- 
-             <div class="panel" style="border: none; margin: 0;background-color: #000;">
- 
-             <div class="row">
-                 
- 
-                 <div class="column" style="background-color: #000; width:600px; margin: 5px; margin-top: 60px;">
- 
- 
-                 <div class="panel" style="padding: 50px;margin-left: 30px;margin-right: 10px;">
- 
-                     <p>I love taking photos wherever I go and express through my photos to share my view of the world. You can have 
-                         a look at some of the photos I took over the years on my wordpress page. </p><br>
-                         <h2 style="font-weight: lighter;text-align: left; margin-bottom: 1px;padding: 2px;padding-top: 15px;">Explore</h2>
-                         <br>
-                     <p>View album <i class="fa-solid fa-arrow-right"></i> <button class="btn2" style="margin: 1px;"><i class="fa-brands fa-wordpress"></i> <a href="https://nefeli2796.wordpress.com/" target="_blank">My photo album</a></button></p>  
-                     </div>
-                 </div>
- 
-                 <div class="column">
-                     <div class="slideshow-container">
- 
-                         <!-- Full-width images with number and caption text -->
-                         <div class="mySlides fade">
-                           <div class="numbertext">1 / 4</div>
-                           <img src="photo.jpeg" style="width:100%">
-                           <div class="text">Cyprus, 2017</div>
-                         </div>
-                       
-                         <div class="mySlides fade">
-                           <div class="numbertext">2 / 4</div>
-                           <img src="photo2.jpeg" style="width:100%">
-                           <div class="text">France, 2019</div>
-                         </div>
-                       
-                         <div class="mySlides fade">
-                           <div class="numbertext">3 / 4</div>
-                           <img src="photo3.jpeg" style="width:100%">
-                           <div class="text">France, 2019</div>
-                         </div>
-                         <div class="mySlides fade">
-                             <div class="numbertext">4 / 4</div>
-                             <img src="photo4.jpeg" style="width:100%">
-                             <div class="text">Cyprus, 2017</div>
-                           </div>
-                       
-                         <!-- Next and previous buttons -->
-                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                       </div>
-                       <br>
-                       
-                       <!-- The dots/circles -->
-                       <div style="text-align:center">
-                         <span class="dot" onclick="currentSlide(1)"></span>
-                         <span class="dot" onclick="currentSlide(2)"></span>
-                         <span class="dot" onclick="currentSlide(3)"></span>
-                         <span class="dot" onclick="currentSlide(4)"></span>
-                       </div>
- 
-                 </div>
-             </div>
-         </div>
-         
- 
-         <div class="panel" style="border: none; margin: 0;">
-             <div style="display: flex; flex-direction: column; align-items: center;width: 100%;">
-             <div>
-                 <h2 id="C4" style="font-weight: lighter; padding: 10px;">Contact</h2>
-                 
-                 <button class="btn2"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/kyriaki-antonaki-98052a18a/" target="_blank">LinkedIn page</a></button>
-                 <button class="btn2"><i class="fa-solid fa-envelope"></i> <a href="mailto:corinaantonaki@gmail.com">corinaantonaki@gmail.com</a></button>
-                 </div>
-             </div>
-             
-             </div>
-             
-                     <p style="font-style: italic;font-size: 14px;margin-left: 5px;">Image created with Adobe Firefly, 2024</p>
-                     <div class="footer">
-                         <p></p>
-                 </div>
-             
- 
-                 <script>
-                     let slideIndex = 1;
- showSlides(slideIndex);
- 
- // Next/previous controls
- function plusSlides(n) {
-   showSlides(slideIndex += n);
- }
- 
- // Thumbnail image controls
- function currentSlide(n) {
-   showSlides(slideIndex = n);
- }
- 
- function showSlides(n) {
-   let i;
-   let slides = document.getElementsByClassName("mySlides");
-   let dots = document.getElementsByClassName("dot");
-   if (n > slides.length) {slideIndex = 1}
-   if (n < 1) {slideIndex = slides.length}
-   for (i = 0; i < slides.length; i++) {
-     slides[i].style.display = "none";
-   }
-   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" active", "");
-   }
-   slides[slideIndex-1].style.display = "block";
-   dots[slideIndex-1].className += " active";
- }
- 
- 
- 
- 
-                     function myFunction() {
-                            document.getElementById("myDropdown").classList.toggle("show");
-                        }
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
- 
- 
- 
-                </script>
- 
-     </body>
- 
- </html>
+    
+            <div class="header">
+                <h1><img src="logo.png" alt="logo">Korina Antonaki</h1>
+            
+
+            <div class="dropdown">
+                
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  
+                 <a href="index.html">About</a>
+                  <a href="Kyriaki_Antonaki_CV.pdf">Resume</a>
+                  <a href="#C4">Contact</a>
+                </div>
+              </div>
+
+            </div>
+        
+
+        <div class="topnav">
+            
+            <button class="btn"><a href="index.html">About</a></button>
+            <button class="btn"><a href="Kyriaki_Antonaki_CV.pdf" target="_blank">Resume </a></button>
+            <button class="btn"><a href="#C4">Contact</a></button>
+        </div>
+</div>
+        
+       
+            
+
+            <div class="panel" style="border: none; margin: 0;background-color: #f2f2f2;width:100%;">
+                <h2 style="font-weight: lighter;margin-top: 150px;">About</h2>
+                <div style="display: flex; flex-direction: column; align-items: center;width: 100%;">
+            
+                <table>
+                  <tr>
+
+                    <th>
+                      <img src="meB&W.jpg" alt="profile_photo">
+                    </th>
+
+                    <th>
+                      <div class="panel2">
+
+                        <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Hi! My name is Kyriaki but everyone calls me Korina.</p><br>
+                    <p></p>
+                    <p> I am an enthusiastic learning designer and passionate 
+                        about blending technology with learning as well as helping learners build confidence in their educational journey. 
+                        I am also a Linguistics graduate (MA with Honours) with a solid foundation in cognitive sciences and programming. 
+                        
+                    <p></p><br>
+                    <p>Overall, I like making stuff, find joy in being creative and have recently discovered my deep interest in web development. </p>
+                        </p>  
+                        </div>
+
+                    </th>
+                  </tr>
+                </table>
+                </div>
+                
+            </div>
+
+            <div class="panel" style="border: none; background-color: #000; width: 100%;">
+
+            <div class="row">
+                
+
+                <div class="column">
+
+
+                <div class="panel2" style="padding: 50px;margin-left: 30px;margin-right: 10px;">
+
+                    <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">I love taking photos wherever I go 
+                      and express through my photos to share my view of the world. You can have 
+                        a look at some of the photos I took over the years on my wordpress page. </p><br>
+                        <h2 style="font-weight: lighter;text-align: left; margin-bottom: 1px;padding: 2px;padding-top: 15px;">Explore</h2>
+                        <br>
+                    <p>View album <i class="fa-solid fa-arrow-right"></i> <button class="btn2" style="margin: 1px;"><i class="fa-brands fa-wordpress"></i> <a href="https://nefeli2796.wordpress.com/" target="_blank">My photo album</a></button></p>  
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="photo.jpeg" style="width:100%">
+                          <div class="text">Cyprus, 2017</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="photo2.jpeg" style="width:100%">
+                          <div class="text">France, 2019</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="photo3.jpeg" style="width:100%">
+                          <div class="text">France, 2019</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="photo4.jpeg" style="width:100%">
+                            <div class="text">Cyprus, 2017</div>
+                          </div>
+                      
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                      <br>
+                      
+                      <!-- The dots/circles -->
+                      <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="panel" style="border: none; margin: 0;">
+            <div style="display: flex; flex-direction: column; align-items: center;width: 100%;">
+            
+                <h2 id="C4" style="font-weight: lighter; padding: 10px;">Contact</h2>
+                
+                <button class="btn2"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/kyriaki-antonaki-98052a18a/" target="_blank">LinkedIn page</a></button>
+                <button class="btn2"><i class="fa-solid fa-envelope"></i> <a href="mailto:corinaantonaki@gmail.com">corinaantonaki@gmail.com</a></button>
+                
+            </div>
+            
+            </div>
+            
+                    <p style="font-style: italic;font-size: 14px;margin-left: 5px;">Image created with Adobe Firefly, 2024</p>
+                    <div class="footer">
+                        <p></p>
+                </div>
+            
+
+                <script>
+                    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+                    function myFunction() {
+                           document.getElementById("myDropdown").classList.toggle("show");
+                       }
+           window.onclick = function(event) {
+             if (!event.target.matches('.dropbtn')) {
+               var dropdowns = document.getElementsByClassName("dropdown-content");
+               var i;
+               for (i = 0; i < dropdowns.length; i++) {
+                 var openDropdown = dropdowns[i];
+                 if (openDropdown.classList.contains('show')) {
+                   openDropdown.classList.remove('show');
+                 }
+               }
+             }
+           }
+
+
+
+               </script>
+
+    </body>
+
+</html>
