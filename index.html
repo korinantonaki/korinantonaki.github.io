@@ -331,11 +331,7 @@
 
         }
 
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-            }
-        }
+       
         .footer {
                 padding: 60px;
                 height: 400px;
@@ -403,6 +399,26 @@
               
                 
             }
+
+
+            /* container */
+.responsive-two-columns {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* columns */
+.responsive-two-columns > * {
+    width:100%;
+    padding:1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .responsive-two-columns > * {
+        width:50%;
+    }
+}
 
         
 
@@ -476,24 +492,23 @@
             
 
             
-              <div style="display: flex; flex-direction: column; align-items: center;width: 100%;">
+             
 
-            <table style="background-color: #000;">
-              <tr>
-                <th>
+            <div class="panel" style="background-color: #000;">
+
+              <div class="responsive-two-columns">
+                <div>
                   <div class="panel2" style="padding: 50px;width: 400px;;margin-right: 10px;">
 
-                    <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">I love taking photos wherever I go 
-                      and express through my photos to share my view of the world. You can have 
-                        a look at some of the photos I took over the years on my wordpress page. </p><br>
-                        <h2 style="font-weight: lighter;text-align: left; margin-bottom: 1px;padding: 2px;padding-top: 15px;">Explore</h2>
-                        <br>
-                    <p>View album <i class="fa-solid fa-arrow-right"></i> <button class="btn2" style="margin: 1px;"><i class="fa-brands fa-wordpress"></i> <a href="https://nefeli2796.wordpress.com/" target="_blank">My photo album</a></button></p>  
-                    </div>
-
-                </th>
-
-                <th>
+                  <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">I love taking photos wherever I go 
+                    and express through my photos to share my view of the world. You can have 
+                      a look at some of the photos I took over the years on my wordpress page. </p><br>
+                      <h2 style="font-weight: lighter;text-align: left; margin-bottom: 1px;padding: 2px;padding-top: 15px;">Explore</h2>
+                      <br>
+                  <p>View album <i class="fa-solid fa-arrow-right"></i> <button class="btn2" style="margin: 1px;"><i class="fa-brands fa-wordpress"></i> <a href="https://nefeli2796.wordpress.com/" target="_blank">My photo album</a></button></p>  
+                  </div>
+                </div>
+                <div>
                   <div class="slideshow-container">
 
                     <!-- Full-width images with number and caption text -->
@@ -535,12 +550,10 @@
                   </div>
 
             </div>
+                </div>
+            </div>
 
-                </th>
-              </tr>
-
-
-            </table>
+              </div>
             
           </div>
 
